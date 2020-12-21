@@ -1,0 +1,3 @@
+
+"A datetime string with format `Y-m-dTH:i:s.Z`, e.g. `2020-11-02T15:14:16.559021`."
+scalar DateTime @scalar(class: "Marqant\\GraphQLCustomScalars\\GraphQL\\Types\\Scalars\\DateTime")

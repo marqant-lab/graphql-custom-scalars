@@ -1,0 +1,34 @@
+{
+    "name": "marqant-lab/graphql-custom-scalars",
+    "description": "Package with GraphQL custom Scalar types.",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmytro Sydorenko",
+            "email": "dmytro@du.digital"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^6.0|^7.0|^8.0",
+        "nuwave/lighthouse": "^4.13"
+    },
+    "autoload": {
+        "psr-4": {
+            "Marqant\\GraphQLCustomScalars\\Tests\\": "tests/",
+            "Marqant\\GraphQLCustomScalars\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Marqant\\GraphQLCustomScalars\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+               "Marqant\\GraphQLCustomScalars\\Providers\\ServiceProvider"
+            ]
+        }
+    }
+}
